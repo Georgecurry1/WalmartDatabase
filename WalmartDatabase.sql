@@ -208,7 +208,7 @@ Insert into Product values('9',	'Jeans','75','A668');
 Insert into Product values('10','Phone','1000','A669');
 
 select* from Product
---employee, store, stock, includes, supplies
+
 
 insert into Transactions values('10001',	'1-11-2022','1','101');
 insert into Transactions values('10002',	'1-12-2022','2','102');
@@ -235,3 +235,53 @@ insert into employee values('19',	'Konna',	'765-098-7765',	'50000',	'700',	'Deme
 insert into employee values('20',	'Leani',	'655-436-3333',	'34000',	'250',	'Annabel.Gottlieb8@hotmail.com', '909');	
 
 select* from employee
+
+Insert into Store values('50',	'Walmart A50', 'WA','900');
+Insert into Store values('51',	'Walmart A51', 'NE','901');
+Insert into Store values('52',	'Walmart A52', 'WE','902');
+Insert into Store values('53',	'Walmart A53', 'NH','903');
+Insert into Store values('54',	'Walmart A54', 'NW','904');
+Insert into Store values('55',	'Walmart A55', 'SE','905');
+Insert into Store values('56',	'Walmart A56', 'SW','906');
+Insert into Store values('57',	'Walmart A57', 'TS','907');
+Insert into Store values('58',	'Walmart A58', 'TW','908');
+Insert into Store values('59',	'Walmart A59', 'TN','909');
+
+Insert into Stock values('11','A660');
+Insert into Stock values('12','A661');
+Insert into Stock values('13','A662');
+Insert into Stock values('14','A663');
+Insert into Stock values('15','A664');
+Insert into Stock values('16','A665');
+Insert into Stock values('17','A666');
+Insert into Stock values('18','A667');
+Insert into Stock values('19','A668');
+Insert into Stock values('20','A669');
+
+select*from Stock
+
+Insert into Includes values('10001','1', '10');
+Insert into Includes values('10002','2', '1');
+Insert into Includes values('10003','3', '8');
+Insert into Includes values('10004','4', '6');
+Insert into Includes values('10005','5', '20');
+Insert into Includes values('10006','6', '6');
+Insert into Includes values('10007','7', '19');
+Insert into Includes values('10008','8', '2');
+Insert into Includes values('10009','9', '13');
+Insert into Includes values('10010','10', '5');
+
+select* from Includes --this table is checking how many products inside a transaction
+
+Insert into Supplies values('VG','1','800');
+Insert into Supplies values('MA','2','177');
+Insert into Supplies values('MF','3','66');
+Insert into Supplies values('GG','4','33');
+Insert into Supplies values('TR','5','88');
+Insert into Supplies values('TU','6','99');
+Insert into Supplies values('VB','7','99');
+Insert into Supplies values('BA','8','1000');
+Insert into Supplies values('NO','9','664');
+Insert into Supplies values('ER','10','988');
+
+select* from Supplies
