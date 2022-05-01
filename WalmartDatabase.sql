@@ -285,3 +285,20 @@ Insert into Supplies values('NO','9','664');
 Insert into Supplies values('ER','10','988');
 
 select* from Supplies
+
+--I want to find the products that are >500 bucks
+select * from Product
+where Price >500
+--this returns one product which is a phone
+
+--CREATING INDEXES
+CREATE NONCLUSTERED INDEX PRICES
+ON Product(Price)--since we search through prices alot, this will make it faster
+
+CREATE NONCLUSTERED INDEX QuanityOfStock
+ON Supplies(Quanity)
+
+CREATE NONCLUSTERED INDEX QuanityOfProductsInTransactions
+ON Includes(Quanity)
+
+--pretty much the onlys one i can think of that will be sorted through much
